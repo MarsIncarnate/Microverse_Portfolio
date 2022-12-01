@@ -1,157 +1,153 @@
 * {
-    margin: 0;
-    background-color: #ffff;
-    text-align: center;
-    
-    font-style: normal;
+  margin: 0;
+  background-color: #ffff;
+  text-align: center;
+  font-style: normal;
 }
 
 nav {
-    display: block;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
 nav a {
-    text-decoration: none;
-    width: 90px;
-    height: 28px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 28px;
-    position: absolute;
-    left: 24px;
-    top: 10px;
-    color: #28352F;
+  text-decoration: none;
+  width: 90px;
+  height: 28px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  position: absolute;
+  left: 24px;
+  top: 10px;
+  color: #28352f;
 }
 
 nav svg {
-    position: absolute;
-    top: 16px;
-    right: 28px;
-    color: #28352F;
-    cursor: pointer;
+  position: absolute;
+  top: 16px;
+  right: 28px;
+  color: #28352f;
+  cursor: pointer;
 }
 
 .intro {
-    display: flex;
-    position: absolute;
-    top: 112px;
-    left: 24px;
-    flex-direction: column;
+  display: flex;
+  position: absolute;
+  top: 112px;
+  left: 24px;
+  flex-direction: column;
 }
 
 .intro h1 {
-    width: 327px;
-    height: 192px;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    color: #172B4D;
+  width: 327px;
+  height: 192px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
 } 
 
 .intro h1 span {
-    display: block;
-    color: #36B37E;
+  display: block;
+  color: #36b37e;
 }
 
 .intro p {
-    width: 327px;
-    height: 164px;
-    margin-top: 58px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
+  width: 327px;
+  height: 164px;
+  margin-top: 58px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 #lines {
-    display: block;
-    position: absolute;
-    top: 54.12px;
-    background-color: transparent;
+  display: block;
+  position: absolute;
+  top: 54.12px;
+  background-color: transparent;
 }
 
 .decor {
-    display: block;
-    position: absolute;
-    background: transparent;
+  display: block;
+  position: absolute;
+  background: transparent;
 }
 
 img:nth-child(1) {
-    position: inherit;
-    background: transparent;
-    height: 93.86px;
-    width: 62.96px;
-    top: 56px;
-    left: 298.2px;  
+  position: inherit;
+  background: transparent;
+  height: 93.86px;
+  width: 62.96px;
+  top: 56px;
+  left: 298.2px;  
 }
 
 img:nth-child(2) { 
-    position: inherit;
-    background: transparent;
-    top: 184.2px;
-    width: 28.45px;
-    height: 30.69px;
-    left: 13.3px;
-    transform: rotate(-10deg);
-
+  position: inherit;
+  background: transparent;
+  top: 184.2px;
+  width: 28.45px;
+  height: 30.69px;
+  left: 13.3px;
+  transform: rotate(-10deg);
 }
 
 img:nth-child(3) {
-    position: inherit;
-    background: transparent;
-    height: 150px;
-    top: 237.33px;
-    left: 330.94px;  
+  position: inherit;
+  background: transparent;
+  height: 150px;
+  top: 237.33px;
+  left: 330.94px;  
 }
 
 img:nth-child(4) {
-    position: inherit;
-    background: transparent;
-    height: 79.49px;
-    left: -12px;
-    top: 510.22px;
-    
+  position: inherit;
+  background: transparent;
+  height: 79.49px;
+  left: -12px;
+  top: 510.22px;  
 }
 
 img:nth-child(5) {
-    position: inherit;
-    background: transparent;
-    height: 16.27px;
-    top: 528.33px;
-    left: 136.78px; 
+  position: inherit;
+  background: transparent;
+  height: 16.27px;
+  top: 528.33px;
+  left: 136.78px; 
 }
 
 img:nth-child(6) {
-    position: inherit;
-    background: transparent;
-    height: 38.59px;
-    top: 668.69px;
-    left: 322.56px; 
+  position: inherit;
+  background: transparent;
+  height: 38.59px;
+  top: 668.69px;
+  left: 322.56px; 
 }
 
 .icons {
-    display: flex;
-    position: absolute;
-    top: 584px;
-    left: 102.42px;
-    height: 40px;
-    width: 170.17px;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  position: absolute;
+  top: 584px;
+  left: 102.42px;
+  height: 40px;
+  width: 170.17px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .icons > * {
-    background: transparent;
-    height: 50%;
-    width: 20px;
+  background: transparent;
+  height: 50%;
+  width: 20px;
 }
 
 .action {
-    position: absolute;
-    top: 666px;
-    left: 168px;
+  position: absolute;
+  top: 666px;
+  left: 168px;
 }
