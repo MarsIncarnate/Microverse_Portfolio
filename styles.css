@@ -49,7 +49,7 @@ nav svg {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
-} 
+}
 
 .intro h1 span {
   display: block;
@@ -84,10 +84,10 @@ img:nth-child(1) {
   height: 93.86px;
   width: 62.96px;
   top: 56px;
-  left: 298.2px;  
+  left: 298.2px;
 }
 
-img:nth-child(2) { 
+img:nth-child(2) {
   position: inherit;
   background: transparent;
   top: 184.2px;
@@ -102,7 +102,7 @@ img:nth-child(3) {
   background: transparent;
   height: 150px;
   top: 237.33px;
-  left: 330.94px;  
+  left: 330.94px;
 }
 
 img:nth-child(4) {
@@ -110,7 +110,7 @@ img:nth-child(4) {
   background: transparent;
   height: 79.49px;
   left: -12px;
-  top: 510.22px;  
+  top: 510.22px;
 }
 
 img:nth-child(5) {
@@ -118,7 +118,7 @@ img:nth-child(5) {
   background: transparent;
   height: 16.27px;
   top: 528.33px;
-  left: 136.78px; 
+  left: 136.78px;
 }
 
 img:nth-child(6) {
@@ -126,7 +126,7 @@ img:nth-child(6) {
   background: transparent;
   height: 38.59px;
   top: 668.69px;
-  left: 322.56px; 
+  left: 322.56px;
 }
 
 .icons {
