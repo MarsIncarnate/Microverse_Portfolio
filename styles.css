@@ -121,7 +121,6 @@ li {
 .portfolio-item {
   display: flex;
   flex-direction: column;
-  border: 2px solid transparent;
   border-radius: 8px;
   background: #ebf0ee;
   border: 1px solid #d0d9d4;
