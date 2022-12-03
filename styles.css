@@ -11,14 +11,7 @@ html {
 
 body {
   min-height: 100%;
-  background: 
-    url(images/polygon1.png) right 0% top 56px no-repeat,
-    url(images/box1.png) 13.3px 184.2px no-repeat,
-    url(images/polygon2.png) right 0 top 237.33px no-repeat,
-    url(images/cylinder2.png) left 136.78px top 528.33px no-repeat,
-    url(images/box2.png) left 0 top 510.22px no-repeat,
-    url(images/cylinder1.png) left 322.56px top 668.69px no-repeat;
-  background-size: 62.96px, 28.45px, auto 150px, auto 16.27px, auto 79.49px, auto 38.49px;
+  background: url(images/polygon1.png) right 0% top 56px no-repeat, url(images/box1.png) 13.3px 184.2px no-repeat, url(images/polygon2.png) right 0 top 237.33px no-repeat, url(images/cylinder2.png) left 136.78px top 528.33px no-repeat, url(images/box2.png) left 0 top 510.22px no-repeat, url(images/cylinder1.png) left 322.56px top 668.69px no-repeat; background-size: 62.96px, 28.45px, auto 150px, auto 16.27px, auto 79.49px, auto 38.49px;
 }
 
 header {
