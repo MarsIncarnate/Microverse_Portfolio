@@ -1,11 +1,27 @@
 * {
   margin: 0;
-  background-color: #ffff;
+  background: transparent;
   text-align: center;
   font-style: normal;
 }
 
-nav {
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background: url(images/polygon1.png) right 0% top 56px no-repeat,
+    url(images/box1.png) 13.3px 184.2px no-repeat,
+    url(images/polygon2.png) right 0 top 237.33px no-repeat,
+    url(images/cylinder2.png) left 136.78px top 528.33px no-repeat,
+    url(images/box2.png) left 0 top 510.22px no-repeat,
+    url(images/cylinder1.png) left 322.56px top 668.69px no-repeat;
+  background-size: 62.96px, 28.45px, auto 150px, auto 16.27px, auto 79.49px,
+    auto 38.49px;
+}
+
+header {
   display: block;
   position: absolute;
   left: 0;
@@ -13,7 +29,7 @@ nav {
   width: 100%;
 }
 
-nav a {
+header a {
   text-decoration: none;
   width: 90px;
   height: 28px;
@@ -26,7 +42,7 @@ nav a {
   color: #28352f;
 }
 
-nav svg {
+header nav {
   position: absolute;
   top: 16px;
   right: 28px;
@@ -72,63 +88,6 @@ nav svg {
   background-color: transparent;
 }
 
-.decor {
-  display: block;
-  position: absolute;
-  background: transparent;
-}
-
-img:nth-child(1) {
-  position: inherit;
-  background: transparent;
-  height: 93.86px;
-  width: 62.96px;
-  top: 56px;
-  left: 298.2px;
-}
-
-img:nth-child(2) {
-  position: inherit;
-  background: transparent;
-  top: 184.2px;
-  width: 28.45px;
-  height: 30.69px;
-  left: 13.3px;
-  transform: rotate(-10deg);
-}
-
-img:nth-child(3) {
-  position: inherit;
-  background: transparent;
-  height: 150px;
-  top: 237.33px;
-  left: 330.94px;
-}
-
-img:nth-child(4) {
-  position: inherit;
-  background: transparent;
-  height: 79.49px;
-  left: -12px;
-  top: 510.22px;
-}
-
-img:nth-child(5) {
-  position: inherit;
-  background: transparent;
-  height: 16.27px;
-  top: 528.33px;
-  left: 136.78px;
-}
-
-img:nth-child(6) {
-  position: inherit;
-  background: transparent;
-  height: 38.59px;
-  top: 668.69px;
-  left: 322.56px;
-}
-
 .icons {
   display: flex;
   position: absolute;
@@ -150,4 +109,8 @@ img:nth-child(6) {
   position: absolute;
   top: 666px;
   left: 168px;
+}
+
+li {
+  list-style-type: none;
 }
