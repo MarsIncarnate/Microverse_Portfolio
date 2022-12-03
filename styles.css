@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  display: block;
+  display: flex;
   position: absolute;
   left: 0;
   top: 0;
