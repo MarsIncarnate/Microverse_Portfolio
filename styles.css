@@ -198,7 +198,7 @@ li {
   border: none;
 }
 
-#portfolio h1 {
+#portfolio h3 {
   display: block;
   font-weight: 700;
   font-size: 40px;
@@ -206,7 +206,7 @@ li {
   color: #172b4d;
 }
 
-#portfolio h1 #underline {
+#portfolio h3 #underline {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -238,7 +238,7 @@ li {
   background-size: 68px, 70.44px;
 }
 
-#about-heading h1 {
+#about-heading h4 {
   width: 351px;
   height: 48px;
   font-weight: 700;
