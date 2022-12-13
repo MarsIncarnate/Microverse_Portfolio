@@ -323,11 +323,12 @@ li {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
   margin-bottom: 58px;
 }
 
-form input, textarea {
+form input,
+ textarea {
   width: 327px;
   margin-bottom: 24px;
   min-height: 48px;
@@ -337,7 +338,8 @@ form input, textarea {
   text-align: left;
 }
 
-input:focus, textarea:focus {
+input:focus,
+ textarea:focus {
   outline: none;
   border: 1px solid #60c095;
   border-radius: 4px;
@@ -350,6 +352,6 @@ form input[type=submit] {
   font-weight: 500;
   font-size: 17px;
   color: #fff;
-  background: #36B37F;
+  background: #36b37f;
   border-radius: 4px;
 }
