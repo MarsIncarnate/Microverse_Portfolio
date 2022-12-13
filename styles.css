@@ -328,7 +328,7 @@ li {
 }
 
 form input,
- textarea {
+textarea {
   width: 327px;
   margin-bottom: 24px;
   min-height: 48px;
@@ -339,7 +339,7 @@ form input,
 }
 
 input:focus,
- textarea:focus {
+textarea:focus {
   outline: none;
   border: 1px solid #60c095;
   border-radius: 4px;
