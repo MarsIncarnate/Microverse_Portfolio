@@ -2,6 +2,7 @@
   margin: 0;
   background: transparent;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
 }
 
@@ -12,13 +13,14 @@ html {
 body {
   min-height: 100%;
   background:
+    url(images/lines.png) no-repeat right 10% top 10%,
     url(images/polygon1.png) right 0% top 56px no-repeat,
     url(images/box1.png) 13.3px 184.2px no-repeat,
     url(images/polygon2.png) right 0 top 237.33px no-repeat,
     url(images/cylinder2.png) left 136.78px top 528.33px no-repeat,
     url(images/box2.png) left 0 top 510.22px no-repeat,
     url(images/cylinder1.png) left 322.56px top 668.69px no-repeat;
-  background-size: 62.96px, 28.45px, auto 150px, auto 16.27px, auto 79.49px, auto 38.49px;
+  background-size: contain, 62.96px, 28.45px, auto 150px, auto 16.27px, auto 79.49px, auto 38.49px;
 }
 
 header {
@@ -48,6 +50,10 @@ header nav {
   right: 28px;
   color: #28352f;
   cursor: pointer;
+}
+
+header ul {
+  display: none;
 }
 
 .intro {
@@ -202,6 +208,10 @@ li {
   border: none;
 }
 
+.portfolio-main button:hover {
+  background-color: #1e488f;
+}
+
 #portfolio h3 {
   display: block;
   font-weight: 700;
@@ -224,6 +234,7 @@ li {
   display: grid;
   grid-template-rows: 333px;
   row-gap: 50px;
+  width: 100%;
   text-align: center;
   align-items: center;
   position: absolute;
@@ -233,7 +244,7 @@ li {
 #about-heading {
   display: flex;
   flex-direction: column;
-  width: 351px;
+  width: 100%;
   text-align: center;
   align-items: center;
   background:
@@ -262,7 +273,7 @@ li {
 }
 
 #about-heading p {
-  width: 320px;
+  width: 90%;
   height: 189px;
   font-weight: 400;
   font-size: 20px;
@@ -285,6 +296,10 @@ li {
   letter-spacing: 0.03em;
   color: #fff;
   border: none;
+}
+
+#about-heading button:hover {
+  background-color: #1e488f;
 }
 
 #about-main {
@@ -315,6 +330,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   justify-content: center;
   position: absolute;
   top: 5607px;
@@ -323,7 +339,7 @@ li {
 }
 
 #contact p {
-  width: 327px;
+  width: 87.2%;
   height: 363px;
   font-weight: 700;
   font-size: 40px;
@@ -378,4 +394,180 @@ form input[type=submit] {
   line-height: 32px;
   text-align: center;
   color: #42526e;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 768px) {
+  body {
+    background:
+      url(images/desktopBg.png) no-repeat,
+      url(images/deskFormBg1.png) no-repeat left 0% top 3422px,
+      url(images/deskFormBg2.png) no-repeat left 19% top 3584px,
+      url(images/deskFormBg3.png) no-repeat right 0% top 3278.3px;
+    background-size: cover, 200px, 102px, 214px;
+  }
+
+  header nav,
+  header a {
+    display: none;
+  }
+
+  header ul {
+    display: flex;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 255px;
+  }
+
+  .intro {
+    all: unset;
+    position: absolute;
+    top: 232px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 63.89%;
+    background-color: transparent;
+  }
+
+  .intro h1 {
+    all: unset;
+    height: 114px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.37px;
+    background-color: transparent;
+  }
+
+  .intro p {
+    all: unset;
+    height: 96px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    background-color: transparent;
+  }
+
+  #line-break::after {
+    content: "\a";
+    white-space: pre;
+  }
+
+  #line-break::before {
+    content: "\a";
+    white-space: pre;
+  }
+
+  .icons {
+    position: absolute;
+    top: 490px;
+    background-color: transparent;
+  }
+
+  .action {
+    position: absolute;
+    top: 604px;
+  }
+
+  #portfolio {
+    position: absolute;
+    top: 1139px;
+    left: 50%;
+    transform: translate(-50%);
+    grid-template-columns: 33% 33% 33%;
+    width: 1171px;
+    column-gap: 0;
+    background-color: transparent;
+  }
+
+  #portfolio h3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  #about {
+    position: absolute;
+    top: 2411px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+  }
+
+  #about-heading p {
+    height: 7%;
+    width: 50%;
+  }
+
+  #about-main {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%);
+    flex-direction: row;
+  }
+
+  #about-heading {
+    width: 100%;
+    background:
+      url(images/aboutDesktop1.png) right 0% top -50px no-repeat,
+      url(images/aboutDesktop2.png) left 0% bottom 0% no-repeat;
+    background-size: auto, 288px;
+  }
+
+  .about-item {
+    width: 369px;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+  #contact {
+    top: 3219px;
+    left: 50%;
+    transform: translate(-50%);
+    flex-direction: row;
+    gap: 24px;
+    max-width: 1171px;
+    align-items: center;
+    padding-bottom: 200px;
+    border-bottom: 1px solid #dfe1e6;
+  }
+
+  #contact p {
+    max-width: 463px;
+    height: 256px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 52px;
+    align-items: center;
+  }
+
+  #contact form {
+    width: 684px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  form input,
+  textarea {
+    width: 100%;
+  }
+
+  #contact .icons {
+    top: 571px;
+  }
+
+  #footer-email {
+    display: none;
+  }
 }
