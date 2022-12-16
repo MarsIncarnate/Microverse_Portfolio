@@ -208,6 +208,10 @@ li {
   border: none;
 }
 
+.portfolio-main button:hover {
+  background-color: #1e488f;
+}
+
 #portfolio h3 {
   display: block;
   font-weight: 700;
@@ -292,6 +296,10 @@ li {
   letter-spacing: 0.03em;
   color: #fff;
   border: none;
+}
+
+#about-heading button:hover {
+  background-color: #1e488f;
 }
 
 #about-main {
