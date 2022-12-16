@@ -397,7 +397,7 @@ form input[type=submit] {
       url(images/deskFormBg1.png) no-repeat left 0% top 3422px,
       url(images/deskFormBg2.png) no-repeat left 19% top 3584px,
       url(images/deskFormBg3.png) no-repeat right 0% top 3278.3px;
-    background-size: contain, 200px, 102px, 214px;
+    background-size: cover, 200px, 102px, 214px;
   }
 
   header nav,
