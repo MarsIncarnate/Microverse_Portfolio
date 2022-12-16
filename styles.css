@@ -269,7 +269,7 @@ li {
 }
 
 #about-heading p {
-  width: 63.88%;
+  width: 90%;
   height: 189px;
   font-weight: 400;
   font-size: 20px;
@@ -498,6 +498,7 @@ form input[type=submit] {
 
   #about-heading p {
     height: 92px;
+    width: 50%;
   }
 
   #break::before {
