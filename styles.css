@@ -13,13 +13,14 @@ html {
 body {
   min-height: 100%;
   background:
+    url(images/lines.png) no-repeat right 10% top 10%,
     url(images/polygon1.png) right 0% top 56px no-repeat,
     url(images/box1.png) 13.3px 184.2px no-repeat,
     url(images/polygon2.png) right 0 top 237.33px no-repeat,
     url(images/cylinder2.png) left 136.78px top 528.33px no-repeat,
     url(images/box2.png) left 0 top 510.22px no-repeat,
     url(images/cylinder1.png) left 322.56px top 668.69px no-repeat;
-  background-size: 62.96px, 28.45px, auto 150px, auto 16.27px, auto 79.49px, auto 38.49px;
+  background-size: contain, 62.96px, 28.45px, auto 150px, auto 16.27px, auto 79.49px, auto 38.49px;
 }
 
 header {
@@ -389,13 +390,18 @@ form input[type=submit] {
 
 /* Media Queries */
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   body {
-    background: url(images/desktopBg.png) no-repeat;
-    background-size: contain;
+    background: 
+      url(images/desktopBg.png) no-repeat,
+      url(images/deskFormBg1.png) no-repeat left 0% top 3422px,
+      url(images/deskFormBg2.png) no-repeat left 19% top 3584px,
+      url(images/deskFormBg3.png) no-repeat right 0% top 3278.3px;
+    background-size: contain, 200px, 102px, 214px;
   }
 
-  header nav, header a {
+  header nav,
+  header a {
     display: none;
   }
 
@@ -445,12 +451,12 @@ form input[type=submit] {
     background-color: transparent;
   }
 
-  #line-break::after{
+  #line-break::after {
     content: "\a";
     white-space: pre;
   }
 
-  #line-break::before{
+  #line-break::before {
     content: "\a";
     white-space: pre;
   }
@@ -473,7 +479,7 @@ form input[type=submit] {
     transform: translate(-50%);
     grid-template-columns: 33% 33% 33%;
     width: 1171px;
-    column-gap: 0px;
+    column-gap: 0;
     background-color: transparent;
   }
 
@@ -507,8 +513,17 @@ form input[type=submit] {
     flex-direction: row;
   }
 
+  #about-heading {
+    background:
+      url(images/aboutDesktop1.png) right 0% top -50px no-repeat,
+      url(images/aboutDesktop2.png) left 0% bottom 0% no-repeat;
+    background-size: auto, 288px;
+  }
+
   .about-item {
     width: 369px;
+    padding-left: 13px;
+    padding-right: 13px;
   }
 
   #contact {
