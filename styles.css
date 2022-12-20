@@ -2,7 +2,7 @@
   margin: 0;
   background: transparent;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
 }
 
@@ -212,7 +212,7 @@ li {
   background-color: #1e488f;
 }
 
-#portfolio h3 {
+#portfolio h2 {
   display: block;
   font-weight: 700;
   font-size: 40px;
@@ -220,7 +220,7 @@ li {
   color: #172b4d;
 }
 
-#portfolio h3 #underline {
+#portfolio h2 #underline {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -247,9 +247,7 @@ li {
   width: 100%;
   text-align: center;
   align-items: center;
-  background:
-    url(images/about-bg1.png) right 0% top -50px no-repeat,
-    url(images/about-bg2.png) left 0% bottom 0% no-repeat;
+  background: url(images/about-bg1.png) right 0% top -50px no-repeat, url(images/about-bg2.png) left 0% bottom 0% no-repeat;
   background-size: 68px, 70.44px;
 }
 
@@ -367,7 +365,7 @@ textarea:focus {
   border-radius: 4px;
 }
 
-form input[type=submit] {
+form input[type="submit"] {
   width: 129px;
   height: 48px;
   margin-top: 24px;
@@ -378,7 +376,7 @@ form input[type=submit] {
   border-radius: 4px;
 }
 
-form input[type=submit]:hover {
+form input[type="submit"]:hover {
   background-color: #1e488f;
 }
 
@@ -398,6 +396,10 @@ form input[type=submit]:hover {
   line-height: 32px;
   text-align: center;
   color: #42526e;
+}
+
+label {
+  visibility: hidden;
 }
 
 /* Media Queries */
@@ -442,7 +444,7 @@ form input[type=submit]:hover {
   .intro h1 {
     all: unset;
     height: 114px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -495,7 +497,7 @@ form input[type=submit]:hover {
     background-color: transparent;
   }
 
-  #portfolio h3 {
+  #portfolio h2 {
     grid-column-start: 1;
     grid-column-end: 4;
   }
