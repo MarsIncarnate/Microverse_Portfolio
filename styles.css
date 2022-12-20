@@ -2,7 +2,7 @@
   margin: 0;
   background: transparent;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
 }
 
@@ -12,13 +12,9 @@ html {
 
 body {
   min-height: 100%;
-  background:
-    url(images/lines.png) no-repeat right 10% top 10%,
-    url(images/polygon1.png) right 0% top 56px no-repeat,
-    url(images/box1.png) 13.3px 184.2px no-repeat,
-    url(images/polygon2.png) right 0 top 237.33px no-repeat,
-    url(images/cylinder2.png) left 136.78px top 528.33px no-repeat,
-    url(images/box2.png) left 0 top 510.22px no-repeat,
+  background: url(images/lines.png) no-repeat right 10% top 10%, url(images/polygon1.png) right 0% top 56px no-repeat,
+    url(images/box1.png) 13.3px 184.2px no-repeat, url(images/polygon2.png) right 0 top 237.33px no-repeat,
+    url(images/cylinder2.png) left 136.78px top 528.33px no-repeat, url(images/box2.png) left 0 top 510.22px no-repeat,
     url(images/cylinder1.png) left 322.56px top 668.69px no-repeat;
   background-size: contain, 62.96px, 28.45px, auto 150px, auto 16.27px, auto 79.49px, auto 38.49px;
 }
@@ -247,9 +243,7 @@ li {
   width: 100%;
   text-align: center;
   align-items: center;
-  background:
-    url(images/about-bg1.png) right 0% top -50px no-repeat,
-    url(images/about-bg2.png) left 0% bottom 0% no-repeat;
+  background: url(images/about-bg1.png) right 0% top -50px no-repeat, url(images/about-bg2.png) left 0% bottom 0% no-repeat;
   background-size: 68px, 70.44px;
 }
 
@@ -367,7 +361,7 @@ textarea:focus {
   border-radius: 4px;
 }
 
-form input[type=submit] {
+form input[type="submit"] {
   width: 129px;
   height: 48px;
   margin-top: 24px;
@@ -378,7 +372,7 @@ form input[type=submit] {
   border-radius: 4px;
 }
 
-form input[type=submit]:hover {
+form input[type="submit"]:hover {
   background-color: #1e488f;
 }
 
@@ -400,15 +394,16 @@ form input[type=submit]:hover {
   color: #42526e;
 }
 
+label {
+  visibility: hidden;
+}
+
 /* Media Queries */
 
 @media only screen and (min-width: 768px) {
   body {
-    background:
-      url(images/desktopBg.png) no-repeat,
-      url(images/deskFormBg1.png) no-repeat left 0% top 3422px,
-      url(images/deskFormBg2.png) no-repeat left 19% top 3584px,
-      url(images/deskFormBg3.png) no-repeat right 0% top 3278.3px;
+    background: url(images/desktopBg.png) no-repeat, url(images/deskFormBg1.png) no-repeat left 0% top 3422px,
+      url(images/deskFormBg2.png) no-repeat left 19% top 3584px, url(images/deskFormBg3.png) no-repeat right 0% top 3278.3px;
     background-size: cover, 200px, 102px, 214px;
   }
 
@@ -442,7 +437,7 @@ form input[type=submit]:hover {
   .intro h1 {
     all: unset;
     height: 114px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -523,8 +518,7 @@ form input[type=submit]:hover {
 
   #about-heading {
     width: 100%;
-    background:
-      url(images/aboutDesktop1.png) right 0% top -50px no-repeat,
+    background: url(images/aboutDesktop1.png) right 0% top -50px no-repeat,
       url(images/aboutDesktop2.png) left 0% bottom 0% no-repeat;
     background-size: auto, 288px;
   }
