@@ -52,39 +52,39 @@ const Details = [
 ];
 
 function toggleMenu() {
-    if (menu.style.display === 'flex') {
-      menu.style.display = 'none';
-      navX.style.display = 'none';
-      nav.style.display = 'flex';
-    } else {
-      menu.style.display = 'flex';
-      navX.style.display = 'block';
-      nav.style.display = 'none';
-    }
+  if (menu.style.display === 'flex') {
+    menu.style.display = 'none';
+    navX.style.display = 'none';
+    nav.style.display = 'flex';
+  } else {
+    menu.style.display = 'flex';
+    navX.style.display = 'block';
+    nav.style.display = 'none';
   }
+}
 
 function revealDetails(a) {
-    detail.style.display = 'flex';
-    if (window.screen.width < 768) {
-      detail.style.top = `${(748 + 474 * a)}px`;
-      detailUl.innerHTML = Details[a].ul.map((item) => `<li>${item}</li>`).join('');
-    } else if (a < 3) {
-      detail.style.top = '1159px';
-      detailUl.innerHTML = Details[a].ul2.map((item) => `<li>${item}</li>`).join('');
-    }
-    document.getElementById('root').style.backgroundColor = '#c1c7d0';
-    detailImg.src = Details[a].img;
-    detailH1.innerHTML = Details[a].h1;
-    detailP.innerHTML = Details[a].p;
+  detail.style.display = 'flex';
+  if (window.screen.width < 768) {
+    detail.style.top = `${(748 + 474 * a)}px`;
+    detailUl.innerHTML = Details[a].ul.map((item) => `<li>${item}</li>`).join('');
+  } else if (a < 3) {
+    detail.style.top = '1159px';
+    detailUl.innerHTML = Details[a].ul2.map((item) => `<li>${item}</li>`).join('');
   }
-  
-  function closeDetails() {
-    detail.style.display = 'none';
-    document.getElementById('root').style.backgroundColor = 'unset';
-  }
-  
-  if (nav === '20') {
-    toggleMenu();
-    revealDetails();
-    closeDetails();
-  }
+  document.getElementById('root').style.backgroundColor = '#c1c7d0';
+  detailImg.src = Details[a].img;
+  detailH1.innerHTML = Details[a].h1;
+  detailP.innerHTML = Details[a].p;
+}
+
+function closeDetails() {
+  detail.style.display = 'none';
+  document.getElementById('root').style.backgroundColor = 'unset';
+}
+
+if (nav === '20') {
+  toggleMenu();
+  revealDetails();
+  closeDetails();
+}
