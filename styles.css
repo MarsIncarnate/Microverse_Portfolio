@@ -177,7 +177,18 @@ li {
   background: #ffff;
   border-radius: 8px;
   padding-top: 16px;
-  padding-bottom: 24px;
+  padding-bottom: 34px;
+}
+
+#detailCont {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3500px;
+  z-index: 4;
+  background-color: rgba(193, 199, 208, 0.9);
 }
 
 #portfolio-details {
@@ -193,6 +204,7 @@ li {
   justify-content: center;
   border-radius: 25px;
   padding-top: 16px;
+  overflow: hidden;
 }
 
 #portfolio-details img {
