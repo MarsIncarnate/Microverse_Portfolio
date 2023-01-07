@@ -180,6 +180,92 @@ li {
   padding-bottom: 24px;
 }
 
+#portfolio-details {
+  display: none;
+  z-index: 7;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  flex-direction: column;
+  width: 92%;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  padding-top: 16px;
+}
+
+#portfolio-details img {
+  width: 83%;
+  height: 220px;
+}
+
+#portfolio-details h1 {
+  width: 259px;
+  height: 135px;
+  text-indent: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172B4D;
+  align-self: flex-start;
+}
+
+#portfolio-details ul {
+  display: flex;
+  height: 32px;
+  margin: 12px 80px 12px -40px;
+}
+
+#portfolio-details ul li {
+  padding: 8px 12px;
+  margin: 0 4px;
+  border-radius: 4px;
+  background: #ebf0ee;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+}
+
+#portfolio-details p {
+  width: 311px;
+  height: 313px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+#portfolio-details .buttons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+#portfolio-details button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  width: 122px;
+  height: 48px;
+  background: #36b37f;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+}
+
+#portfolio-details #detailX {
+  display: block;
+  position: absolute;
+  top: 4%;
+  right: 13%;
+}
+
 .about-item ul {
   display: flex;
   gap: 8px;
@@ -531,6 +617,60 @@ label {
   #portfolio h2 {
     grid-column-start: 1;
     grid-column-end: 4;
+  }
+
+  #portfolio-details {
+    width: 920px;
+    height: 1083px;
+    
+  }
+
+  #portfolio-details img {
+    position: absolute;
+    width: 872px;
+    height: 616px;
+    left: 24px;
+    top: 78px;
+    border: 1px solid #DFE1E6;
+    border-radius: 8px;
+  }
+
+  #portfolio-details h1 {
+    all: unset;
+    width: 589px;
+    height: 82px;
+    position: absolute;
+    top: 718px;
+    align-self: flex-start;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+  }
+
+  #portfolio-details .buttons {
+    position: absolute;
+    top: 718px;
+    right: 10%;
+  }
+
+  #portfolio-details ul {
+    position: absolute;
+    top: 820px;
+    left: 5%;
+  }
+
+  #portfolio-details p {
+    position: absolute;
+    top: 888px;
+    width: 876px;
+    height: 151px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
   }
 
   #about {
