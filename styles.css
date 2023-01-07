@@ -208,8 +208,20 @@ li {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
   align-self: flex-start;
+}
+
+.about-item ul {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  height: 40px;
+  padding: 0;
+  margin-top: 24px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 #portfolio-details ul {
@@ -246,6 +258,10 @@ li {
   margin-bottom: 20px;
 }
 
+.portfolio-main button:hover {
+  background-color: #1e488f;
+}
+
 #portfolio-details button {
   display: flex;
   align-items: center;
@@ -264,18 +280,6 @@ li {
   position: absolute;
   top: 4%;
   right: 13%;
-}
-
-.about-item ul {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  height: 40px;
-  padding: 0;
-  margin-top: 24px;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
 }
 
 .portfolio-item .portfolio-main ul {
@@ -317,10 +321,6 @@ li {
   border-radius: 4px;
   color: #fff;
   border: none;
-}
-
-.portfolio-main button:hover {
-  background-color: #1e488f;
 }
 
 #portfolio h2 {
@@ -371,16 +371,6 @@ li {
   color: #172b4d;
 }
 
-.about-item p {
-  width: 337px;
-  height: 32px;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  text-align: center;
-  color: #344563;
-}
-
 #about-heading p {
   width: 90%;
   height: 189px;
@@ -429,10 +419,6 @@ li {
   padding-top: 40px;
   width: 327px;
   height: 352px;
-}
-
-.about-item img {
-  width: 128px;
 }
 
 #contact {
@@ -622,7 +608,10 @@ label {
   #portfolio-details {
     width: 920px;
     height: 1083px;
-    
+  }
+
+  .about-item img {
+    width: 128px;
   }
 
   #portfolio-details img {
@@ -631,7 +620,7 @@ label {
     height: 616px;
     left: 24px;
     top: 78px;
-    border: 1px solid #DFE1E6;
+    border: 1px solid #dfe1e6;
     border-radius: 8px;
   }
 
@@ -659,6 +648,16 @@ label {
     position: absolute;
     top: 820px;
     left: 5%;
+  }
+
+  .about-item p {
+    width: 337px;
+    height: 32px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #344563;
   }
 
   #portfolio-details p {
