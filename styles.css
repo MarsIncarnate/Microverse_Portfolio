@@ -25,7 +25,8 @@ body {
 
 header {
   display: flex;
-  position: absolute;
+  position: fixed;
+  z-index: 2;
   left: 0;
   top: 0;
   width: 100%;
@@ -50,9 +51,33 @@ header nav {
   right: 28px;
   color: #28352f;
   cursor: pointer;
+  z-index: 2;
+}
+
+header ul li a {
+  all: unset;
+  cursor: pointer;
+  height: 24px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3a4a42;
 }
 
 header ul {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  margin-left: 0;
+  padding-top: 108px;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 1;
+}
+
+#navX {
   display: none;
 }
 
@@ -155,6 +180,38 @@ li {
   padding-bottom: 24px;
 }
 
+#portfolio-details {
+  display: none;
+  z-index: 7;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  flex-direction: column;
+  width: 92%;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  padding-top: 16px;
+}
+
+#portfolio-details img {
+  width: 83%;
+  height: 220px;
+}
+
+#portfolio-details h1 {
+  width: 259px;
+  height: 135px;
+  text-indent: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  align-self: flex-start;
+}
+
 .about-item ul {
   display: flex;
   gap: 8px;
@@ -167,10 +224,10 @@ li {
   justify-content: center;
 }
 
-.portfolio-item .portfolio-main ul {
+#portfolio-details ul {
   display: flex;
   height: 32px;
-  margin: 16px 0 29px -23px;
+  margin: 12px 80px 12px -40px;
 }
 
 .about-item ul li {
@@ -198,6 +255,38 @@ li {
   color: #3a4a42;
 }
 
+#portfolio-details ul li {
+  padding: 8px 12px;
+  margin: 0 4px;
+  border-radius: 4px;
+  background: #ebf0ee;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+}
+
+#portfolio-details p {
+  width: 311px;
+  height: 313px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+#portfolio-details .buttons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.portfolio-main button:hover {
+  background-color: #1e488f;
+}
+
 .portfolio-item .portfolio-main button {
   padding: 12px;
   width: 122px;
@@ -208,8 +297,24 @@ li {
   border: none;
 }
 
-.portfolio-main button:hover {
-  background-color: #1e488f;
+#portfolio-details button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  width: 122px;
+  height: 48px;
+  background: #36b37f;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+}
+
+#portfolio-details #detailX {
+  display: block;
+  position: absolute;
+  top: 4%;
+  right: 13%;
 }
 
 #portfolio h2 {
@@ -260,16 +365,6 @@ li {
   color: #172b4d;
 }
 
-.about-item p {
-  width: 337px;
-  height: 32px;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  text-align: center;
-  color: #344563;
-}
-
 #about-heading p {
   width: 90%;
   height: 189px;
@@ -318,10 +413,6 @@ li {
   padding-top: 40px;
   width: 327px;
   height: 352px;
-}
-
-.about-item img {
-  width: 128px;
 }
 
 #contact {
@@ -415,13 +506,14 @@ label {
   }
 
   header nav,
-  header a {
+  header .logo {
     display: none;
   }
 
   header ul {
+    all: unset;
     display: flex;
-    position: absolute;
+    position: fixed;
     top: 16px;
     left: 50%;
     transform: translate(-50%);
@@ -429,6 +521,11 @@ label {
     align-items: center;
     justify-content: space-between;
     width: 255px;
+  }
+
+  #menu-items li a {
+    all: unset;
+    cursor: pointer;
   }
 
   .intro {
@@ -500,6 +597,79 @@ label {
   #portfolio h2 {
     grid-column-start: 1;
     grid-column-end: 4;
+  }
+
+  #portfolio-details {
+    width: 920px;
+    height: 1083px;
+  }
+
+  .about-item img {
+    width: 128px;
+  }
+
+  #portfolio-details img {
+    position: absolute;
+    width: 872px;
+    height: 616px;
+    left: 24px;
+    top: 78px;
+    border: 1px solid #dfe1e6;
+    border-radius: 8px;
+  }
+
+  #portfolio-details h1 {
+    all: unset;
+    width: 589px;
+    height: 82px;
+    position: absolute;
+    top: 718px;
+    align-self: flex-start;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+  }
+
+  #portfolio-details .buttons {
+    position: absolute;
+    top: 718px;
+    right: 10%;
+  }
+
+  .portfolio-item .portfolio-main ul {
+    display: flex;
+    height: 32px;
+    margin: 16px 0 29px -23px;
+  }
+
+  #portfolio-details ul {
+    position: absolute;
+    top: 820px;
+    left: 5%;
+  }
+
+  .about-item p {
+    width: 337px;
+    height: 32px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #344563;
+  }
+
+  #portfolio-details p {
+    position: absolute;
+    top: 888px;
+    width: 876px;
+    height: 151px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
   }
 
   #about {
